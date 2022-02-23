@@ -164,7 +164,7 @@ const ProfileComponent = ({ details }) => {
                   <input name='gender' defaultValue={details.gender} onChange={loginCreds} required />
                   <input name='relation' defaultValue={details.relation} onChange={loginCreds} required />
                 </div>
-
+                <button defaultValue="Login" id="login_btn" data-dismiss="modal" onClick={postData}>Update Now</button>
               </div >
             </div>
 
