@@ -16,7 +16,6 @@ const Myprofile = () => {
       });
       const apidata = await response.json();
       setbirthDetails(apidata.data.allRelatives);
-      console.log(apidata.data.allRelatives);
 
     }
     fetchData();
@@ -102,9 +101,11 @@ const Myprofile = () => {
         <span></span>
         <span></span>
       </div>
-      {birthDetails.map((item) => {
-        return <ProfileComponent key={item.uuid} details={item} />
-      })}
+      {
+        birthDetails.map((item) => {
+          return <ProfileComponent key={item.uuid} details={item} />
+        })
+      }
       <button style={{ border: "none", outline: "none", padding: "8px", marginTop: "10px", background: "#f28e23", color: "white", borderRadius: "8px" }} type="button" data-toggle="modal" data-target="#exampleModal">+ Add New Member</button>
 
 
