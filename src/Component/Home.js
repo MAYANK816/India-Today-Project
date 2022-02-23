@@ -30,7 +30,7 @@ const Home = () => {
         <div id="wallet"><p>Wallet Balance : ₹ 0</p></div>
         <h3>Ask a Question</h3>
         <p>Seek aacurate answers to your life problems and get guidance towards the right path. Whether the Problem is related to love,self,life,business,money,education or work, our astrologers will do an in depth study of your birth chart  to provide personalized respones along with remedies.</p>
-
+        <h3>Choose Category</h3>
         <div className='home_category'>
           <select name="category" id="category" onChange={clickHandler}>
             {category.map((item, idx) => {
