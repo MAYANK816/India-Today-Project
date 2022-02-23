@@ -1,0 +1,179 @@
+.login_component {
+    display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   flex-direction: column;
+  }
+  .modal {
+    background: rgba(0, 0, 0, 0.1) !important;
+  }
+  .modal-content {
+    background: white;
+    border-radius: 18px;
+    outline: none !important;
+    border: none !important;
+    backdrop-filter: saturate(180%) blur(5px);
+  }
+
+  .modal-header {
+    border: 0px !important;
+  }
+  .close {
+    color: rgb(0, 0, 0);
+  }
+  .login_form {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    height: auto;
+  }
+  .login_gd_rl{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+  .login_gd_rl select{
+    text-decoration: none;
+  width: 45%;
+  border: 0.1px solid rgb(145, 145, 145);
+  outline: none;
+  border-radius: 5px;
+  padding: 8px;
+  margin-bottom: 20px;
+  margin-left: 8px;
+  font-family: "Roboto", sans-serif;
+  }
+  
+  .login_gd_rl input{
+    text-decoration: none;
+  width: 45%;
+  border: 0.1px solid rgb(145, 145, 145);
+  outline: none;
+  border-radius: 5px;
+  padding: 8px;
+  margin-bottom: 20px;
+  margin-left: 8px;
+  font-family: "Roboto", sans-serif;
+  }
+  .login_form label{
+    color:rgb(145, 145, 145);
+  }
+ .login_form input{
+  text-decoration: none;
+  width: 70%;
+  border: 0.1px solid rgb(145, 145, 145);
+  outline: none;
+  border-radius: 5px;
+  padding: 8px;
+  margin-bottom: 20px;
+  font-family: "Roboto", sans-serif;
+ }
+ .login_form_fields_dob{
+   display: flex;
+   align-items: center;
+   width: 100%;
+   justify-content: space-evenly;
+ }
+  .login_form_fields {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 12px;
+  }
+  .login_form_fields img {
+    border-radius: 50%;
+    width: 25%;
+  }
+  .login_form_fields label {
+    margin-bottom: 10px;
+    margin-right: auto;
+    padding-left: 15px;
+    color: rgb(145, 145, 145);
+  }
+  .login_form_fields input {
+    text-decoration: none;
+    border: none;
+    width: 100%;
+    border: 0.12px solid rgb(145, 145, 145);
+    outline: none;
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    font-family: "Roboto", sans-serif;
+  }
+  .login_form_fields button {
+    margin-top: 5px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    background: transparent;
+  }
+  .login_form_fields h4,
+  h5,
+  label {
+    font-weight: 400;
+    margin-bottom: 15px;
+    font-family: "Roboto", sans-serif;
+    color: rgb(145, 145, 145);
+  }
+  .login_form_fields h6 {
+    font-weight: 500;
+    color: white;
+    margin-bottom: 35px;
+  }
+  .modal-header h5 {
+    color: white;
+    font-weight: bolder;
+  }
+  #login_btn {
+    outline: none;
+    border: none;
+    text-decoration: none;
+    padding: 8px;
+    background: #00c476;
+    width: 20vw;
+    font-family: "Roboto Slab", serif;
+    border-radius: 15px;
+    transition: all 1s ease-in-out;
+    color: white;
+  }
+  #login_btn:hover {
+    background-color: white;
+    color: #333;
+    border: 0.5px solid #333;
+  }
+
+  @media screen and (max-width: 600px) {
+    .login_form {
+      width: 90vw;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .login_form_fields{
+      align-items: center;
+      justify-content: flex-start;
+      margin-bottom: 5px;
+    }
+    #login_btn {
+      width: 30vw;
+    }
+    .login_form_fields input {
+      width: 80vw;
+      margin-bottom: 5px;
+    }
+    .login_form img {
+      width: 35%;
+      border-radius: 15px;
+    }
+    .login_form_fields_dob{
+      flex-direction: column;
+    }
+  }
+
+  

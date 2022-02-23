@@ -1,0 +1,99 @@
+.home_header{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.home_header p{
+    text-align: justify;
+    padding: 22px;
+}
+.home_header h3{
+    padding: 18px;
+}
+.home_category{
+    padding: 18px;
+    width: 50vw;
+}
+.home_category select{
+    width: 30vw;
+    padding: 10px;
+}
+.Qa_header{
+    
+    padding: 20px;
+}
+.Qa_header input
+{
+    width: 40vw;
+    height: 100px;
+    padding: 5px;
+    text-align: start;
+}
+.home_suggestions{
+    padding-left:30px;
+    padding-right: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.home_suggestions img{
+    width: 25px;
+}
+#home_suggestions_child{
+padding: 8px 20px 5px 20px;
+border-bottom: 0.1px solid rgb(158, 158, 158);
+text-align: justify;
+width: 40vw;
+}
+.ask_now_btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin: 5px;
+
+    background: #4b60bc;
+    border-radius: 8px;
+    width: 100%;
+    color: white;
+}
+.ask_now_btn button{
+    padding: 10px;
+    width: 15vw;
+    color: #4b60bc;
+    background: white;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+   
+}
+#wallet{
+    background: #4b60bc;
+    color: white;
+    font-weight: 600;
+    border-radius: 12px;
+    margin: 10px;
+    height: 9vh;
+    margin-left: auto;
+}
+@media screen and (max-width:660px) {
+    .ask_now_btn{
+        width:100%;
+        padding: 5px;
+    }
+    .ask_now_btn button{
+        padding: 8px;
+        width: 30vw;
+    }
+    .Qa_header input
+        {
+            width: 80vw;
+        }
+        #home_suggestions_child{
+            width: 100%;
+            padding: 4px 2px 2px 2px;
+        }
+    
+}

@@ -1,0 +1,37 @@
+.profilecmp_main{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+.profilecmp_details{
+    width:80vw;
+    height: 100px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.profilecmp_details img{
+    border: none;
+    outline: none;
+    width: 35px;
+    padding: 5px;
+    cursor: pointer;
+
+}
+.profilecmp_details button{
+    border: none;
+    outline: none;
+    width: 8vw;
+    padding: 5px;
+}
+@media screen and (max-width:660px) {
+    .profilecmp_details{
+        width: 100%;
+        margin: 8px;
+        font-size:small;
+    }
+}
