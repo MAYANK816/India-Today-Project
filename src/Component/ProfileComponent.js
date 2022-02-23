@@ -12,7 +12,6 @@ const ProfileComponent = ({ details }) => {
       Accept: 'application/json',
       headers: { "Authorization": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI4ODA5NzY1MTkxIiwiUm9sZXMiOltdLCJleHAiOjE2NzY0NjE0NzEsImlhdCI6MTY0NDkyNTQ3MX0.EVAhZLNeuKd7e7BstsGW5lYEtggbSfLD_aKqGFLpidgL7UHZTBues0MUQR8sqMD1267V4Y_VheBHpxwKWKA3lQ" }
     })
-    swal("Good job!", "Member Deleted Successful !", "success");
     navigate('/');
     return response.status;
   }
@@ -111,6 +110,25 @@ const ProfileComponent = ({ details }) => {
     navigate('/');
     setfirst(!first)
   }
+  const deleFunction = () => {
+    swal({
+      title: "Are you sure?",
+      text: "Once deleted, you will not be able to recover this data!",
+      icon: "warning",
+      buttons: true,
+      dangerMode: true,
+    })
+      .then((willDelete) => {
+        if (willDelete) {
+          deleteData();
+          swal("Poof! Your file has been deleted!", {
+            icon: "success",
+          });
+        } else {
+          swal("Your file is safe!");
+        }
+      })
+  }
   return (
     <>
       <div className='profilecmp_main'>
@@ -120,7 +138,8 @@ const ProfileComponent = ({ details }) => {
           <p>{tob}</p>
           <p>{details.relation}</p>
           <img src="/images/pencil.png" alt="_editimage" onClick={editUser} ></img>
-          <img src="/images/delete.png" alt="_delimage" onClick={deleteData}></img>
+          <img src="/images/delete.png" alt="_delimage" onClick={deleFunction
+          }></img>
         </div>
       </div>
       {first &&
