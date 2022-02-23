@@ -27,7 +27,7 @@ const ProfileAddition = () => {
       [e.target.name]: e.target.value
     });
   }
-  const postData = async () => {
+  const sendData = async () => {
     const locationUrl = 'https://staging-api.astrotak.com/api/location/place?inputPlace=' + loginCred.city + "," + loginCred.state;
 
     let fsname = loginCred.name.split(" ")[0];
@@ -47,6 +47,18 @@ const ProfileAddition = () => {
     else if (loginCred.relation === "Mother" || loginCred.relation === "mother") {
       Id = "2";
       main_relation = "Mother";
+    }
+    else if (loginCred.relation === "Sister" || loginCred.relation === "sister") {
+      Id = "4";
+      main_relation = "Sister";
+    }
+    else if (loginCred.relation === "Spouse" || loginCred.relation === "spouse") {
+      Id = "5";
+      main_relation = "Spouse";
+    }
+    else if (loginCred.relation === "Son" || loginCred.relation === "son") {
+      Id = "6";
+      main_relation = "Son";
     }
     var obj = {
       birthDetails: {
@@ -71,7 +83,7 @@ const ProfileAddition = () => {
       gender: loginCred.gender
     }
 
-
+    console.log("obj ", obj);
     await fetch('https://staging-api.astrotak.com/api/relative', {
       method: 'POST', mode: 'cors',
       cache: 'no-cache',
@@ -159,7 +171,7 @@ const ProfileAddition = () => {
                   </select>
                   <input name='relation' onChange={loginCreds} required />
                 </div>
-                <button value="Login" id="login_btn" data-dismiss="modal" onClick={postData}>Add Now</button>
+                <button value="Login" id="login_btn" data-dismiss="modal" onClick={sendData}>Add Now</button>
               </div >
             </div>
 
