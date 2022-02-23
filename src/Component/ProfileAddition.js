@@ -3,7 +3,7 @@ import ProfileComponent from './ProfileComponent';
 import './AddMember.css'
 import swal from 'sweetalert';
 import { useNavigate } from 'react-router-dom';
-const Myprofile = () => {
+const ProfileAddition = () => {
   const [birthDetails, setbirthDetails] = useState([]);
   const [loginCred, setloginCred] = useState({ name: '', city: '', hour: '', minute: '', day: '', month: '', year: '', relation: '', gender: '', meridiem: '', state: '' });
   const navigate = useNavigate();
@@ -171,4 +171,4 @@ const Myprofile = () => {
   )
 }
 
-export default Myprofile
+export default ProfileAddition

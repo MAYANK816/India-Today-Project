@@ -7,12 +7,22 @@
     justify-content: center;
     align-items: flex-start;
     margin-top: 20px;
-    background: rgb(223, 223, 223);
+    background: rgb(255, 255, 255);
     width: 80vw;
     border-radius: 8px;
 
 }
-#profile_header_1{
+.profile_header2{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+    background: rgb(255, 255, 255);
+    width: 80vw;
+    border-radius: 8px;
+
+}
+#profile_header_1,#profile_header_2{
     border: none;
     width: 20vw;
     outline: none;
@@ -47,7 +57,14 @@
     .profile_header{
         width: 100%;
     }
+    .profile_header2{
+        width: 100%;
+    }
+    
     #profile_header_1{
         width: 30vw;
+    }
+    #profile_header_2{
+        width: 45vw;
     }
 }
